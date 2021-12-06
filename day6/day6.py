@@ -2,6 +2,8 @@
 # PART 1 #
 ##########
 
+# Part 1 got rank #409 on the global leaderboard
+
 """
 data = open("day6in.txt").read().split("\n")[0].split(",")
 lantern_fish = [int(x) for x in data]
