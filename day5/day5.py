@@ -46,6 +46,8 @@ print(at_least_two)
 # PART 2 #
 ##########
 
+# Part 2 got rank #811 on the global leaderboard.
+
 data = open("day5in.txt").read().split("\n")
 
 at_least_two = 0
