@@ -38,9 +38,9 @@ avg = sum(arr)//len(arr)
 # from i = 0 to i = len(arr) - 1
 # If you work out the math, you find that the function is minimized when
 # n = average(arr) - (1/(2 * len(arr))) * sum(|arr[i] - n|) from i = 0 to i = len(arr) - 1
-# I don't know how to solve this equation further, but I reason that it should be relatively small.
-# This is what interval_dist is. The distance away from the average to check for a minimum point.
-interval_dist = 15
+# The sum of the signs can at most be the length of the array times -1 or 1.
+# This means that the average divided by two must be either -1/2 or 1/2, which we can round up to -1 or 1.
+interval_dist = 1
 
 best_s = 1000000000000000000
 for compare in range(max(0, avg - interval_dist), avg + interval_dist + 1):
