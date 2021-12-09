@@ -4,6 +4,7 @@
 
 # Rank 160 solution
 
+"""
 data = open("day9in.txt").read().split("\n")
 grid = [[int(c) for c in line] for line in data]
 minima = []
@@ -26,6 +27,7 @@ for i in range(len(grid)):
         if (found): minima.append(grid[i][j])
 
 print(sum(minima) + len(minima))
+"""
 
 ##########
 # PART 2 #
